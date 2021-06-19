@@ -4,10 +4,12 @@ ENV V2RAY_PLUGIN_VERSION v1.3.1
 ENV HOST        YOUR-DOMAIN
 ENV SERVER_ADDR YOUR-SHADOWSOCKS-SERVER-IP
 ENV SERVER_PORT YOUR-SHADOWSOCKS-SERVER-PORT
+ENV LOCAL_ADDR  0.0.0.0
+ENV LOCAL_PORT  1080
 ENV PASSWORD    YOUR-SHADOWSOCKS-PASSWORD
 ENV METHOD      chacha20-ietf-poly1305 (change it)
-ENV OBFS_PLUGIN v2ray-plugin
-ENV OBFS_OPTS   host=yourdomain.com;tls;path=/v2ray;certRaw=-----BEGIN PRIVATE KEY-----YOUR CERTIFICATE-----END PRIVATE KEY-----
+ENV PLUGIN v2ray-plugin
+ENV PLUGIN_OPTS   host=yourdomain.com;tls;path=/v2ray;certRaw=-----BEGIN PRIVATE KEY-----YOUR CERTIFICATE-----END PRIVATE KEY-----
 #ENV ARGS=
 
 USER root
@@ -27,12 +29,12 @@ CMD exec ss-local \
       -p $SERVER_PORT \
       -k $PASSWORD \
       -m $METHOD \
-      -b 0.0.0.0\ # bind address
-      -l 1080\ # bind port
+      -b $LOCAL_ADDR\ # bind address
+      -l $LOCAL_PORT\ # bind port
       -t 60\
       --fast-open \
-      --plugin $OBFS_PLUGIN \
-      --plugin-opts $OBFS_OPTS \
+      --plugin $PLUGIN \
+      --plugin-opts $PLUGIN_OPTS \
 #      $ARGS
 
 EXPOSE 1080
