@@ -7,17 +7,26 @@ You can use this image to run multi container or on the other words, multi proxy
 
 # setup
 Just change the variable on docker file, build it and run the container.
+
 ``docker build -t shadowsocks-client .``
+
 ``docker run -d -p 1080:1080 --name client-1 shadowsocks-client``
+
 And now you have socks5 proxy.
 
 # ENV Variable
 HOST = your domain
+
 SERVER_ADDR = your shadowsocks server ip address which you wanna connect to that
+
 SERVER_PORT = your shadowsocks server port 
+
 LOCAL_ADDR = your local address whitch you wanna bind to your server address
+
 LOCAL_PORT = your local port whitch you wanna bind it to your server port
+
 PASSWORD = your shadowsocks password
+
 METHOD = your encryption method (rc4-md5,
                                   aes-128-gcm, aes-192-gcm, aes-256-gcm,
                                   aes-128-cfb, aes-192-cfb, aes-256-cfb,
@@ -29,6 +38,8 @@ METHOD = your encryption method (rc4-md5,
                                   salsa20, chacha20 and chacha20-ietf.
                                   The default cipher is aes-256-gcm.
                                 )
-PLUGIN = you shadowsocks plugin (The Default plugin is v2ray-plugin)
+                                
+PLUGIN = you shadowsocks plugin (The default plugin is v2ray-plugin)
+
 PLUGIN_OPTS = your plugin configuration
 
