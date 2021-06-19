@@ -3,7 +3,8 @@ This Dockerfile build an image for shadowsocks-libev with v2ray-plugin, based on
 
 # Usage
 You can use this image to setup a shadowsocks-libev client on your local machine.
-You can use this image to run multi container or on the other words, multi proxy on your server and pass it to your reverse proxy to handle your requests
+
+You can use this image to run multi container or on the other word, multi proxy on your server and pass it to your reverse proxy (e.g nginx) to handle your requests
 
 # setup
 Just change the variable on docker file, build it and run the container.
