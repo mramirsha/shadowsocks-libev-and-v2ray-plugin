@@ -14,6 +14,10 @@ Just change the variable on docker file, build it and run the container.
 
 And now you have socks5 proxy.
 
+To test your proxy run the blow command
+
+``curl --socks5-hostname 127.0.0.1:1080 -v https://www.google.com``
+
 # ENV Variable
 HOST = your domain
 
