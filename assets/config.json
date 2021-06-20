@@ -1,0 +1,13 @@
+{
+    "server": "51.195.28.121",
+    "server_port": 443,
+    "local_address": "0.0.0.0",
+    "local_port": 1080,
+    "password": "123456789",
+    "timeout": 300,
+    "method": "chacha20-ietf-poly1305",
+    "fast_open": true,
+    "workers": 8,
+    "plugin":"/root/assets/v2ray-plugin-v1.3.1",
+    "plugin_opts": "tls;host=deepfold.ir;path=/v2ray;rawCert=-----BEGINPRIVATEKEY-----MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDvuaqiSon0fcI52dOCXNh2nQ3uylt10xz5Bw0Ynxbo/zMKlsYr7caqYCJPOEfucWQxZzwC4x2ZPhdX1uu37AwtYAnUnvGOeutfFA458vAxBmt4OcKzsU7U1+/ky4PTYtRVkDSkL/VCOGxJ27uEiDXHs9F8WlEc04FavoTgGRAQtyA9yibfXqqhRW4ha4TEq+XjUkQHrSb/UJCuQ+glxTEbyV+IVtYIWdbJC1l/6RnKOZm/N9FBw1HN/QA5CIKfbhVg7G68ZI0ITHKXyaxqm8phGgCNN5FV4yNLUs+PI7WBSP/twV7N6ZpwyxpCq0seBVYjq/gjxDFr1dmNMOQdtzCJAgMBAAECggEAWUrEBx1Sk3IAVYIQaX9h1ZScavSO6q1PHmcE9sXTR8g+39PXTueLV0zlmrJxAJzV4Bz+2mh0Tu80zLAuLtzKkGA0aTEm8pZQc6LJxcX6t5gXkbmaD0qc/WTNY2B24tbuFkzXfsyqQxc3Jq+lAjGmLpOJFROjIOSbSwyp+7r6I+8JjUX+U7mWLrhAG3hAmLlzIpRf9h/KxvxPzA+2q/U0jfA/8X/hjp5HM99gDycoANc8kNlspxSg5P47zSuntCEc3V3y+UBO44UwvIZmt0XzJQJIaDtmpQQsnRpA+JolXccdYxqbGdErJvpdJAJxY0rw80pS/XlvO4qvRo8vg72bgQKBgQD72vhxNFL+UoDPDw4EWAUNpb8LO35jYsdV97IP2M1iak4UBEFP++zm4Hhnsm54WiTIAyO4l6VbyTdGBK1qUbRMTnj6vWhh4yb7rlLt/5upzBP9xS2XGsMRuZsA8Gt730sQ12ax3010cQf7nJFqjPg9kyrKJY5c00NWYPgomKeLcQKBgQDzq5gA4mhj6YVy9J7AZVTORwohD2Lth9gYLOEpVnXIg8/9Zn3LyEhBVswvB/lCqoilDxAVw8lUoGOEny7R3+rgIMycU8UkMagWvOx9fEQG1jeW4o1kbd/GuFUyRQsdhIoHb57Jc9W+Z/zhnDH2PFVGpGqr5Hh1Og2ckeOToLF6mQKBgE+UbRQ4GFFL+G90rlUpCs+5I5iE//afa6T6U0U2mA8Uz/77KTgAvmZlXyZE9ysIML8SXuMg55sNBW4WZEVH89R4pzlzR9xGTjcQahvRvHn2hgqVl0Y7qo+bOiMd1Jibgbicl1J04KB+ZqtWWYx1ZqruKYMeQtGJ36kXktIhCi/BAoGBAKltme6bftxh5lGNN8ktbC9WA/wC19WzjBUbN6BnptQ6mudmWXfVljAgay8Ui0PIkeS7OYL4tMfsEeaITKTP3l/jToIwWTaWdHsC+Ck0u5RJZTO76XZ4U424ZDzk9xqaKuOKwEzxByEy6wnwcmj1gJHzBtzoqr1QFWDVq/jdViqZAoGBALDk59UrZSTvMsc4cTyR/dD7CPO8xrXrj5mCbz8z/Tovltq5ma2Paqhq/mn1s0R+eEF17n6XRAIu1BPMU4AWOSAXfI3TeHRm0gJgDIIQ2lF2dtotcduRoEtENFDm1MBr8J+nu7Z4ud9Z3fk9qwnYZboob9Dp+RdgpDKU1/ZtFplq-----ENDPRIVATEKEY-----"
+}
