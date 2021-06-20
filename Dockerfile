@@ -29,9 +29,9 @@ CMD exec ss-local \
       -p $SERVER_PORT \
       -k $PASSWORD \
       -m $METHOD \
-      -b $LOCAL_ADDR\ # bind address
-      -l $LOCAL_PORT\ # bind port
-      -t 60\
+      -b $LOCAL_ADDR \ # bind address
+      -l $LOCAL_PORT \ # bind port
+      -t 60 \
       --fast-open \
       --plugin $PLUGIN \
       --plugin-opts $PLUGIN_OPTS \
