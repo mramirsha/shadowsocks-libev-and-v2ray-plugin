@@ -2,6 +2,13 @@ FROM shadowsocks/shadowsocks-libev:v3.3.5
 
 USER root
 
-CMD ["ss-local", "-c", "/root/assets/config.json"]
+RUN apk --update add privoxy runit tini
 
-EXPOSE 1080
+COPY assets root/assets
+COPY assets/service /etc/service/
+
+ENTRYPOINT ["tini", "--"]
+
+CMD ["runsvdir", "/etc/service"]
+
+EXPOSE 1080 1081
